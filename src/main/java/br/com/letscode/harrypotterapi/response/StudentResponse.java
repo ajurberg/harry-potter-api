@@ -9,13 +9,13 @@ import lombok.Setter;
 @Setter
 public class StudentResponse {
 
-    private long responseId;
-    private String responseName;
+    private long id;
+    private String name;
     private House house;
 
     public StudentResponse(Student student, House house) {
-        this.responseId = student.getStudentId();
-        this.responseName = student.getName();
+        this.id = student.getStudentId();
+        this.name = student.getName();
         this.house = house;
     }
 

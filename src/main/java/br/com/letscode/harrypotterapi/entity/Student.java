@@ -22,6 +22,6 @@ public class Student {
     private long studentId;
     private String name;
     @SerializedName("sorting-hat-choice")
-    private Integer houseId;
+    private String houseId;
 
 }
