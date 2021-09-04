@@ -20,7 +20,7 @@ public class ConsumingApi {
 
     public static House findHouse(Student student) {
         var restTemplate = new RestTemplate();
-        var response = restTemplate.getForEntity(webService + "/house/", String.class);
+        var response = restTemplate.getForEntity(webService + "/house/" + student.getHouseId(), String.class);
         var gson = new Gson();
         return gson.fromJson(response.getBody(), House.class);
     }
